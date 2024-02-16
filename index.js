@@ -13,6 +13,10 @@ for (let i = 0; i < cards.length; i++) {
         //get the title
         const title = card.querySelector("h3").innerText;
         const price = card.querySelector("span").innerText;
-        console.log(title,"Price is", price)
+        // console.log(title,"Price is", price)
+
+        //get value to the blank div
+        const titleContainer=document.getElementById('title-container');
+        console.log(titleContainer);
     })
 }
