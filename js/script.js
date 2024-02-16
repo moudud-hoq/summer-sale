@@ -11,10 +11,11 @@ for (let i = 0; i < cards.length; i++) {
 
         //get the title
         // const title = document.getElementById('kitchen-ware')
-        const cardTitle = card.querySelector("h3").innerText;
+        const title = card.querySelector("h3").innerText;
         const pText = card.querySelector("p").innerText;
-        console.log({ pText, cardTitle });
-    })
+        // console.log({ pText, title });
+        console.log(title, pText);
+    });
 }
 
 // const titles = document.querySelector('.bg-chnages');
