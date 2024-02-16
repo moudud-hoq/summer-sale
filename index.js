@@ -57,11 +57,16 @@ btn.addEventListener("click", function () {
     //200 tkr nice khoroc kora jabnea
     if (totalPrice >= 200) {
         if (couponCode === "SELL200") {
-
+            //discount calculation
             const discountElement = document.getElementById('discountPrice');
             const discountAmmount = totalPrice * 0.2;
-            discountElement.innerText=discountAmmount.toFixed(2);
+            discountElement.innerText = discountAmmount.toFixed(2);
 
+            //rest total calculation
+            const restTotal = document.getElementById("total");
+            restTotal.innerText = totalPrice - discountAmmount.toFixed(2);
+            //blank the balue
+            document.getElementById("input-field").value = "";
         } else {
             alert("Invalid Coupon");
         }
