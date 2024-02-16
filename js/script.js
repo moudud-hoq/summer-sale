@@ -14,7 +14,21 @@ for (let i = 0; i < cards.length; i++) {
         const title = card.querySelector("h3").innerText;
         const pText = card.querySelector("p").innerText;
         // console.log({ pText, title });
-        console.log(title, pText);
+        // console.log(title, pText);
+
+        //Now we will hhhisab nikash korbo-
+        const accountContainer = document.getElementById('account-container');
+        // console.log(accountContainer);
+
+        const h3 = document.createElement("h3");
+        h3.innerText = title;
+        accountContainer.appendChild(h3);
+
+
+        const p = document.createElement("p");
+        p.innerText = pText;
+        //to injext the title 
+        accountContainer.appendChild(h3);
     });
 }
 
